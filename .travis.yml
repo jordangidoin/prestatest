@@ -1,10 +1,6 @@
 language: php
 php:
-  - 5.5
-matrix:
-  allow_failures:
-    - php: hhvm
-script:
-  - phpunit
-notifications:
-  email: false
+  - "5.5"
+  - "5.4"
+  - "5.3"
+script: "phpunit -c tests/phpunit.xml"
