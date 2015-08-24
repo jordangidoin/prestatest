@@ -1,0 +1,10 @@
+language: php
+php:
+  - 5.5
+matrix:
+  allow_failures:
+    - php: hhvm
+script:
+  - phpunit
+notifications:
+  email: false
